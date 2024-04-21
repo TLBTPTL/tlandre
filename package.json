@@ -2,7 +2,7 @@
   "name": "portfolio-andre",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://TLBTPTL.github.io/tlandre",
+  "homepage": "https://TLBTPTL.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
