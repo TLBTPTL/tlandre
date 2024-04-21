@@ -1,0 +1,27 @@
+/**body {
+    background: linear-gradient(to bottom, #5439ff, #f2f2f2);
+}*/
+
+/* Styles pour le mode sombre */
+.dark-mode {
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+  
+  /* Styles spécifiques à la navbar en mode sombre */
+  .dark-mode .navbar {
+    background-color: #333333;
+  }
+  
+  .dark-mode .navbar-brand {
+    color: #ffffff;
+  }
+  
+  .dark-mode .navbar-toggler-icon {
+    background-color: #ffffff;
+  }
+  
+  .dark-mode .nav-link {
+    color: #ffffff;
+  }
+  

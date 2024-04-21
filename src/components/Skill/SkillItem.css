@@ -1,0 +1,48 @@
+/* Style pour les médailles */
+.medal-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Style pour la carte des compétences */
+.skill-card {
+    width: 12rem;
+    height: 12rem;
+    margin: 10px;
+    position: relative;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease; /* Ajout de la transition sur la propriété box-shadow */
+
+    /* Style pour placer la médaille en haut à droite */
+    .medal-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    /* Style pour l'image de la carte des compétences */
+    .card-img-top {
+        height: 100px;
+        object-fit: contain;
+    }
+
+    .card-title {
+        margin-bottom: 15px;
+    }
+
+    .card-body {
+        transition: background-color 0.3s ease; /* Ajout de la transition sur la couleur de fond */
+        cursor: pointer; /* Changement du curseur pour indiquer qu'il s'agit d'un élément cliquable */
+        
+        &:hover {
+            background-color: #f0f0f0; /* Lors du survol de la partie card-body, changez la couleur de fond */
+        }
+    }
+
+    &:hover {
+        box-shadow: 4px 4px 4px 2px rgba(0, 0, 255, 0.2); /* Lors du survol, augmentez l'ombre pour mettre en valeur la carte */
+        color: #007bff;
+    }
+}

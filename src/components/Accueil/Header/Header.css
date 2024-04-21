@@ -1,0 +1,190 @@
+/* Import de la police Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Box sizing */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -ms-box-sizing: inherit;
+    -o-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/* Root styles */
+:root {
+    --box-sizing: border-box;
+    --user-select: none;
+    cursor: default;
+    --font-family: 'Poppins', sans-serif; /* Utilisation de la police Poppins */
+}
+
+/* Box sizing override */
+html, body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: var(--box-sizing);
+    -moz-box-sizing: var(--box-sizing);
+    -ms-box-sizing: var(--box-sizing);
+    -o-box-sizing: var(--box-sizing);
+    box-sizing: var(--box-sizing);
+    font-family: var(--font-family); /* Utilisation de la police Poppins */
+}
+
+/* Overflow styles */
+html {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -moz-overflow-scrolling: touch;
+    -ms-overflow-scrolling: touch;
+    -o-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    -ms-overflow-style: ms-autohiding-scrollbar;
+}
+
+/* Page wrap */
+#page-wrap {
+    position: relative;
+    display: block;
+    clear: both;
+    background: none;
+    color: #000;
+    text-decoration: none;
+    padding: 3rem 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Inner wrap */
+#inner-wrap {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+    min-height: 322px;
+    overflow: visible;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    z-index: 1;
+    top: 3rem;
+    left: 2rem;
+    display: block;
+    width: 9vmax;
+    height: 9vmax;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+/* Waves */
+.waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    min-width: 100%;
+    min-height: 70%;
+    margin: auto 0;
+}
+
+/* Text */
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 83%;
+    height: 100%;
+    margin: auto;
+    color: black;
+    font-family: 'Montserra', sans-serif;
+    font-weight: 600;
+}
+
+/* Image and SVG */
+img, svg {
+    display: block;
+    overflow: visible;
+    pointer-events: none;
+}
+
+/* Group */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.group {
+    zoom: 1;
+}
+
+/* Credits */
+.credits {
+    position: relative;
+    z-index: 9;
+    font-size: 130%;
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.credits a {
+    display: inline-block;
+    color: #df1888;
+    font-family: var(--font-family);
+    line-height: 1.5em;
+    text-decoration: none !important;
+    white-space: nowrap;
+    margin: 0 1.2em;
+    padding: 0.6em 0;
+    transition: 150ms;
+}
+
+.credits a:hover {
+    color: #2d71b9;
+    cursor: pointer;
+}
+
+/* Credits logo */
+.credits-logo {
+    fill: currentColor;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1.6em;
+    height: 1.6em;
+    margin: 0 0.5em 0 0;
+}
+
+#inner-wrap {
+    position: relative;
+}
+
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}

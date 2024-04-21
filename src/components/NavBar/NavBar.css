@@ -1,0 +1,62 @@
+.logo-image {
+    width: 40px; 
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%; 
+    margin-right: 10px;
+}
+
+#portfolio {
+    font-size: 1.2rem;
+    margin-top: -4%;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar.dark {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .toggle-container {
+    position: relative;
+  }
+  
+  .toggle-checkbox {
+    display: none;
+  }
+  
+  .toggle-label {
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .toggle-label::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-checkbox:checked + .toggle-label {
+    background-color: #5e5e5e;
+  }
+  
+  .toggle-checkbox:checked + .toggle-label::after {
+    transform: translateX(20px) translateY(-50%);
+  }
