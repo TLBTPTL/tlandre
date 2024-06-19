@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "./Header.css";
 
-function Header1() {
+function Header() {
   useEffect(() => {
     const cpCreditsUrl = "https://codepen.io/PickJBennett/details/BdbrMW";
     const cpCreditsTitle = "🌈 Sexy Animated Rainbow Waves Header";
@@ -63,10 +63,22 @@ function Header1() {
           preserveAspectRatio="xMidYMid meet"
           aria-label="Titouan-Lysandre"
         >
-          <text x="50%" y="50%" textAnchor="middle" fontSize="60px">
+          <text
+            className="sticker-text sticker-text-lg"
+            x="50%"
+            y="50%"
+            textAnchor="middle"
+            fontSize="60px"
+          >
             Titouan-Lysandre
           </text>
-          <text x="50%" y="65%" textAnchor="middle" fontSize="40px">
+          <text
+            className="sticker-text"
+            x="50%"
+            y="65%"
+            textAnchor="middle"
+            fontSize="40px"
+          >
             ANDRE
           </text>
         </svg>
@@ -75,4 +87,4 @@ function Header1() {
   );
 }
 
-export default Header1;
+export default Header;

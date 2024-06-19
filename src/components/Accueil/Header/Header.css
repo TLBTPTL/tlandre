@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+
 /* Box sizing */
 *,
 *:before,
@@ -78,19 +79,6 @@ body {
     height: 100%;
     min-height: 322px;
     overflow: visible;
-}
-
-/* Logo */
-.logo {
-    position: absolute;
-    z-index: 1;
-    top: 3rem;
-    left: 2rem;
-    display: block;
-    width: 9vmax;
-    height: 9vmax;
-    min-width: 50px;
-    min-height: 50px;
 }
 
 /* Waves */
@@ -188,3 +176,6 @@ img, svg {
     width: 100%;
     z-index: 999;
 }
+
+
+  
