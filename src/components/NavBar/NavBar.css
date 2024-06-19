@@ -1,62 +1,139 @@
-.logo-image {
-    width: 40px; 
-    height: 40px;
-    border: 1px solid black;
-    border-radius: 50%; 
-    margin-right: 10px;
-}
-
-#portfolio {
-    font-size: 1.2rem;
-    margin-top: -4%;
-}
-
+/* Pour les écrans larges */
 .navbar {
-    background-color: #f8f9fa;
-    padding: 1rem;
-    transition: background-color 0.3s ease;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  position: relative;
+  top: 0;
+}
+
+/* Bouton de dark mode */
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.toggle-label::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #5e5e5e;
+}
+
+.toggle-checkbox:checked + .toggle-label::after {
+  transform: translateX(20px) translateY(-50%);
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.logo {
+  align-items: center;
+}
+
+/* Modifier le fond et la couleur de l'icône du bouton du menu burger en mode normal */
+.navbar-toggler {
+  background-color: #333;
+}
+
+.navbar-toggler-icon::before {
+  background-color: #fff;
+}
+
+/* Modifier le fond et la couleur de l'icône du bouton du menu burger en mode sombre */
+.navbar.dark .navbar-toggler {
+  background-color: #fff;
+}
+
+.navbar.dark .navbar-toggler-icon::before {
+  background-color: #333;
+}
+
+/* Pour les écrans étroits */
+@media (max-width: 1000px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .navbar.dark {
-    background-color: #343a40;
-    color: #fff;
-  }
-  
+
   .toggle-container {
-    position: relative;
+    order: -1;
+    margin-right: 0;
+    margin-bottom: 10px;
+    position: static;
   }
-  
-  .toggle-checkbox {
-    display: none;
+
+  .logo-container {
+    flex: 1;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  .toggle-label {
-    display: block;
-    width: 40px;
-    height: 20px;
-    background-color: #ccc;
-    border-radius: 20px;
-    position: relative;
-    cursor: pointer;
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .toggle-label::after {
-    content: "";
-    width: 18px;
-    height: 18px;
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    left: 2px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: transform 0.3s ease;
+
+  .nav-item {
+    margin-left: 0;
+    margin-top: 1rem;
   }
-  
-  .toggle-checkbox:checked + .toggle-label {
-    background-color: #5e5e5e;
+
+  .navbar-toggler {
+    z-index: 1;
   }
-  
-  .toggle-checkbox:checked + .toggle-label::after {
-    transform: translateX(20px) translateY(-50%);
-  }
+}

@@ -86,17 +86,23 @@
         "name": "Java Swing",
         "level": "Intermédiaire",
         "lien": "https://symfony.com/doc/current/index.html"
+      },
+      {
+        "id": 15,
+        "name": "Drupal 10",
+        "level": "Intermédiaire",
+        "lien": "https://www.drupal.org/about/10"
       }
     ],
     "Bases de données": [
       {
-        "id": 15,
+        "id": 16,
         "name": "MySQL",
         "level": "Intermédiaire",
         "lien": "https://dev.mysql.com/doc/"
       },
       {
-        "id": 16,
+        "id": 17,
         "name": "MongoDB",
         "level": "Intermédiaire",
         "lien": "https://www.mongodb.com/docs/"
@@ -104,82 +110,76 @@
     ],
     "Outils": [
       {
-        "id": 17,
+        "id": 18,
         "name": "Git",
         "level": "Avancé",
         "lien": "https://git-scm.com/"
       },
       {
-        "id": 18,
+        "id": 19,
         "name": "GitLab",
         "level": "Avancé",
         "lien": "https://docs.gitlab.com/"
       },
       {
-        "id": 19,
+        "id": 20,
         "name": "VSCode",
         "level": "Avancé",
         "lien": "https://code.visualstudio.com/"
       },
       {
-        "id": 20,
+        "id": 21,
         "name": "JetBrains",
         "level": "Avancé",
         "lien": "https://www.jetbrains.com/products/"
       },
       {
-        "id": 21,
+        "id": 22,
         "name": "Windows",
         "level": "Intermédiaire",
         "lien": "https://www.microsoft.com/en-us/windows"
       },
       {
-        "id": 22,
+        "id": 23,
         "name": "Linux",
         "level": "Intermédiaire",
         "lien": "https://training.linuxfoundation.org/"
       },
       {
-        "id": 23,
+        "id": 24,
         "name": "Canva",
         "level": "Intermédiaire",
         "lien": "https://www.canva.com/"
       },
       {
-        "id": 24,
+        "id": 25,
         "name": "Android Studio",
         "level": "Intermédiaire",
         "lien": "https://developer.android.com/"
       },
       {
-        "id": 25,
+        "id": 26,
         "name": "Figma",
         "level": "Débutant",
         "lien": "https://www.figma.com/"
       },
       {
-        "id": 26,
+        "id": 27,
         "name": "Docker",
         "level": "Débutant",
         "lien": "https://www.docker.com/"
       },
       {
-        "id": 27,
+        "id": 28,
         "name": "Photoshop",
         "level": "Débutant",
         "lien": "https://www.adobe.com/products/photoshop.html"
       },
       {
-        "id": 28,
+        "id": 29,
         "name": "Premiere Pro",
         "level": "Débutant",
         "lien": "https://www.adobe.com/products/premiere.html"
-      },
-      {
-        "id": 29,
-        "name": "DOUZE",
-        "level":"Avancé",
-        "lien": "https://drinkdouze.com/"
       }
     ]
   }

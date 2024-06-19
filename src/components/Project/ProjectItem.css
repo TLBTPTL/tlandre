@@ -9,4 +9,9 @@
     width: 18rem; 
     margin: 0 10px; 
 }   
+
+.dark-mode .project-card {
+    background-color: #424242;
+    color: #ffffff;
+  }
   
