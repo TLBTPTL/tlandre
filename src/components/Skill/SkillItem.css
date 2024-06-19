@@ -45,3 +45,8 @@
         color: #007bff;
     }
 }
+
+.dark-mode .skill-card {
+    background-color: #424242;
+    color: #ffffff;
+}

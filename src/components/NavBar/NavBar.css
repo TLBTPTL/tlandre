@@ -1,29 +1,43 @@
 /* Pour les écrans larges */
-/* .navbar {
+.navbar {
   background-color: #f8f9fa;
   padding: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   transition: background-color 0.3s ease;
-} */
+}
 
-/* .navbar.dark {
+.navbar.dark {
   background-color: #343a40;
   color: #fff;
-} */
+}
 
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
 
-/* Bouton de dark mode */
+.nav-item {
+  margin-left: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
 .toggle-container {
   display: flex;
   align-items: center;
-  margin-right: 10px;
-  position: absolute;
-  right: 2%;
-  margin-top: 10px
+  margin-left: 10px;
+  position: relative;
+  top: 0;
 }
 
+/* Bouton de dark mode */
 .toggle-checkbox {
   display: none;
 }
@@ -59,11 +73,6 @@
   transform: translateX(20px) translateY(-50%);
 }
 
-/* .logo-container {
-  display: flex;
-  align-items: center;
-} */
-
 .logo-image {
   width: 40px;
   height: 40px;
@@ -75,24 +84,56 @@
   align-items: center;
 }
 
+/* Modifier le fond et la couleur de l'icône du bouton du menu burger en mode normal */
+.navbar-toggler {
+  background-color: #333;
+}
+
+.navbar-toggler-icon::before {
+  background-color: #fff;
+}
+
+/* Modifier le fond et la couleur de l'icône du bouton du menu burger en mode sombre */
+.navbar.dark .navbar-toggler {
+  background-color: #fff;
+}
+
+.navbar.dark .navbar-toggler-icon::before {
+  background-color: #333;
+}
 
 /* Pour les écrans étroits */
-/* @media (max-width: 1000px) { */
-  /* .navbar { */
-    /* flex-direction: column; Affichage en colonne pour les petits écrans */
-    /* align-items: center; Centrage des éléments */
-  /* } */
+@media (max-width: 1000px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
 
-  /* .toggle-container { */
-    /* order: -1; Placer le toggle de mode sombre avant l'image-logo */
-    /* margin-right: 0; Réinitialiser la marge */
-    /* margin-bottom: 10px; Ajouter un espace en bas */
-  /* } */
+  .toggle-container {
+    order: -1;
+    margin-right: 0;
+    margin-bottom: 10px;
+    position: static;
+  }
 
-  /* .logo-container {
+  .logo-container {
     flex: 1;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
   }
-} */
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .navbar-toggler {
+    z-index: 1;
+  }
+}
