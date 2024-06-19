@@ -4,7 +4,6 @@ import SkillCategory from "./SkillCategory";
 import skillsData from "../../assets/skills.json";
 import "./SkillList.css";
 
-// Définition du type des données de chaque catégorie
 interface SkillData {
   id: number;
   name: string;
@@ -12,7 +11,6 @@ interface SkillData {
   lien: string;
 }
 
-// Définition du type de vos catégories
 interface Categories {
   Langages: SkillData[];
   "Frameworks/Librairies": SkillData[];
@@ -20,7 +18,6 @@ interface Categories {
   Outils: SkillData[];
 }
 
-// Obtention des clés des catégories
 type SkillCategoryName = keyof Categories;
 
 function SkillList() {
@@ -49,8 +46,6 @@ function SkillList() {
         ))}
       </ul>
       <div id="skills" className="skill-list">
-        {" "}
-        {/* Ajout de l'ID skills */}
         {skillsData.categories[selectedCategory].map((skill) => (
           <SkillItem
             key={skill.id}

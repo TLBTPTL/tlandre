@@ -1,0 +1,89 @@
+/* CompetencesIUT.css */
+
+.competences-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.skill-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.skill-title {
+  background-color: #e91388; /* Pink color */
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.skill-title:hover {
+  background-color: #EB2D2E; /* Red color */
+}
+
+.subskill-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subskill-item {
+  padding: 10px 20px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subskill-item:first-child {
+  border-top: none;
+}
+
+.subskill-name {
+  flex-grow: 1;
+}
+
+.subskill-rating {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .competences-container {
+    padding: 10px;
+  }
+
+  .skill-title {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .subskill-item {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .subskill-rating {
+    margin-top: 5px;
+  }
+}

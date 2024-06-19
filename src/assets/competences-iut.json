@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Réalisation d’application",
+    "subSkills": [
+      { "name": "Maîtriser différents langages de programmation", "rating": 4 },
+      { "name": "Maîtriser différents types de programmation", "rating": 5 },
+      { "name": "Réaliser des programmes pour résoudre un problème donné", "rating": 3 },
+      { "name": "Écrire un code lisible et savoir faire une documentation", "rating": 4 },
+      { "name": "Choisir une structure de données adaptée", "rating": 5 },
+      { "name": "Réaliser des phases de tests", "rating": 4 },
+      { "name": "Savoir utiliser et créer des API", "rating": 5 }
+    ]
+  },
+  {
+    "title": "Optimisation des applications informatiques",
+    "subSkills": [
+      { "name": "Analyser un problème et le découper en tâches", "rating": 4 },
+      { "name": "Analyser et comprendre les enjeux et l’impact d’un algorithme existant", "rating": 5 },
+      { "name": "Formaliser et utiliser des outils mathématiques pour l’informatique", "rating": 3 },
+      { "name": "Appréhender les différents niveaux de langages", "rating": 4 },
+      { "name": "Utiliser des techniques algorithmiques adaptées", "rating": 5 },
+      { "name": "Anticiper les résultats d’un algorithme", "rating": 4 },
+      { "name": "Optimiser des algorithmes", "rating": 5 }
+    ]
+  },
+  {
+    "title": "Administrer des systèmes informatiques communicants complexes",
+    "subSkills": [
+      { "name": "Maîtriser l’architecture des systèmes et des réseaux", "rating": 5 },
+      { "name": "Installer et configurer un système d’exploitation/outils de développement", "rating": 4 },
+      { "name": "Concevoir des applications communicantes par réseau", "rating": 5 },
+      { "name": "Sécuriser les systèmes", "rating": 3 },
+      { "name": "Respecter les contraintes de performances / de coûts / d’efficacité", "rating": 4 },
+      { "name": "Assurer la pérennité des données et du code", "rating": 5 }
+    ]
+  },
+  {
+    "title": "Gérer des données de l’information",
+    "subSkills": [
+      { "name": "Mettre à jour et interroger une base de données relationnelle", "rating": 4 },
+      { "name": "Visualiser des données", "rating": 5 },
+      { "name": "Concevoir une base de données relationnelle à partir d'un cahier des charges", "rating": 3 },
+      { "name": "Optimiser les modèles de données de l'entreprise", "rating": 4 },
+      { "name": "Assurer la confidentialité des données", "rating": 5 },
+      { "name": "Organiser la restitution de données à travers la programmation", "rating": 4 }
+    ]
+  },
+  {
+    "title": "Conduire un projet",
+    "subSkills": [
+      { "name": "Planification du projet", "rating": 4 },
+      { "name": "Découpage et répartition des tâches", "rating": 5 },
+      { "name": "Gestion de l'équipe", "rating": 3 },
+      { "name": "Communiquer de manière efficace avec les acteurs du projet", "rating": 4 },
+      { "name": "Gestion des risques et du temps", "rating": 5 },
+      { "name": "Évaluer les résultats et étudier les points qui pourraient être améliorés", "rating": 4 }
+    ]
+  },
+  {
+    "title": "Travailler dans une équipe informatique",
+    "subSkills": [
+      { "name": "Savoir communiquer avec son équipe", "rating": 5 },
+      { "name": "Savoir manager une équipe informatique", "rating": 4 },
+      { "name": "Connaître et savoir appliquer les différentes méthodes de développement", "rating": 3 },
+      { "name": "Utiliser des systèmes de gestion de code source pour organiser son travail", "rating": 4 },
+      { "name": "Faire un portfolio de nos compétences", "rating": 5 },
+      { "name": "Faire une veille technologique", "rating": 4 }
+    ]
+  }
+]

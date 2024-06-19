@@ -18,14 +18,11 @@ interface ProjectsData {
 function ProjectList() {
   const { equipe, perso } = projectsData as ProjectsData;
 
-  // Limiter le nombre de projets affichés par page
   const projectsPerPage = 3;
 
-  // États pour gérer la pagination
   const [equipePage, setEquipePage] = useState(1);
   const [persoPage, setPersoPage] = useState(1);
 
-  // Fonctions pour gérer le changement de page
   const handleEquipePageChange = (page: number) => {
     setEquipePage(page);
   };
@@ -34,7 +31,6 @@ function ProjectList() {
     setPersoPage(page);
   };
 
-  // Calcule l'index de début et de fin des projets à afficher
   const equipeStartIndex = (equipePage - 1) * projectsPerPage;
   const equipeEndIndex = equipePage * projectsPerPage;
   const equipeLimited = equipe.slice(equipeStartIndex, equipeEndIndex);
@@ -43,7 +39,6 @@ function ProjectList() {
   const persoEndIndex = persoPage * projectsPerPage;
   const persoLimited = perso.slice(persoStartIndex, persoEndIndex);
 
-  // Condition pour afficher ou masquer la pagination
   const equipePaginationVisible = equipe.length > 3;
   const persoPaginationVisible = perso.length > 3;
 
@@ -79,7 +74,6 @@ function ProjectList() {
                       Previous
                     </button>
                   </li>
-                  {/* Affiche les numéros de page */}
                   {[
                     ...Array(Math.ceil(equipe.length / projectsPerPage)).keys(),
                   ].map((num) => (
@@ -142,7 +136,6 @@ function ProjectList() {
                       Previous
                     </button>
                   </li>
-                  {/* Affiche les numéros de page */}
                   {[
                     ...Array(Math.ceil(perso.length / projectsPerPage)).keys(),
                   ].map((num) => (
