@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import ProjectItem from "./ProjectItem";
 import projectsData from "../../assets/projects.json";
 import "./ProjectList.css";
@@ -8,6 +8,7 @@ interface ProjectData {
   technologies: string;
   type: string;
   lien: string;
+  competences: string[]; // Ajout de la propriété competences
 }
 
 interface ProjectsData {
@@ -47,7 +48,7 @@ function ProjectList() {
       <h1>Mes Projets</h1>
       <div className="row" id="projects">
         <div className="col-md-6">
-          <h3>Projets en Équipe</h3>
+          <h3>Projets IUT et Professionels</h3>
           <div className="project-list-card-column">
             {equipeLimited.map((project: ProjectData, index: number) => (
               <div className="mb-3" key={index}>
@@ -56,6 +57,7 @@ function ProjectList() {
                   technologies={project.technologies}
                   type={project.type}
                   lien={project.lien}
+                  competences={project.competences}
                 />
               </div>
             ))}
@@ -120,6 +122,7 @@ function ProjectList() {
                   technologies={project.technologies}
                   type={project.type}
                   lien={project.lien}
+                  competences={project.competences} // Passer les compétences
                 />
               </div>
             ))}

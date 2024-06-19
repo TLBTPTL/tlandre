@@ -1,79 +1,61 @@
 {
-    "equipe": [
-      {
-        "name": "Projet 1 en équipe",
-        "technologies": "React, Node.js",
-        "type": "Web",
-        "lien": "https://example.com/projet1"
-      },
-      {
-        "name": "Projet 2 en équipe",
-        "technologies": "Python, Flask",
-        "type": "Web",
-        "lien": "https://example.com/projet2"
-      },
-      {
-        "name": "Projet 3 en équipe",
-        "technologies": "Angular, Firebase",
-        "type": "Web",
-        "lien": "https://example.com/projet3"
-      },
-      {
-        "name": "Projet 4 en équipe",
-        "technologies": "Java, Spring Boot",
-        "type": "Web",
-        "lien": "https://example.com/projet4"
-      },
-      {
-        "name": "Projet 5 en équipe",
-        "technologies": "Vue.js, Express",
-        "type": "Web",
-        "lien": "https://example.com/projet5"
-      },
-      {
-        "name": "Projet 6 en équipe",
-        "technologies": "Ruby on Rails",
-        "type": "Web",
-        "lien": "https://example.com/projet6"
-      },
-      {
-        "name": "Projet 7 en équipe",
-        "technologies": "Vue.js, Express",
-        "type": "Web",
-        "lien": "https://example.com/projet5"
-      },
-      {
-        "name": "Projet 8 en équipe",
-        "technologies": "Ruby on Rails",
-        "type": "Web",
-        "lien": "https://example.com/projet6"
-      }
-    ],
-    "perso": [
-      {
-        "name": "Projet personnel",
-        "technologies": "Vue.js",
-        "type": "Web",
-        "lien": "https://example.com/projetperso"
-      },
-      {
-        "name": "Projet personnel 2",
-        "technologies": "React Native",
-        "type": "Mobile",
-        "lien": "https://example.com/projetperso2"
-      },
-      {
-        "name": "Projet personnel 3",
-        "technologies": "Swift, SwiftUI",
-        "type": "Mobile",
-        "lien": "https://example.com/projetperso3"
-      },
-      {
-        "name": "Projet personnel 4",
-        "technologies": "Flutter",
-        "type": "Mobile",
-        "lien": "https://example.com/projetperso4"
-      }
-    ]
-  }
-  
+  "equipe": [
+    {
+      "name": "Implémentation d’un annuaire en langage C",
+      "technologies": "Langage C, Code::Blocks",
+      "type": "Console Application",
+      "lien": "lien_vers_le_projet_1",
+      "competences": ["AC11.01", "AC11.02", "AC11.03"]
+    },
+    {
+      "name": "Comparaison d’approches algorithmiques",
+      "technologies": "Python, EduPython",
+      "type": "Analyse d'algorithmes de tri",
+      "lien": "lien_vers_le_projet_2",
+      "competences": ["AC12.01", "AC12.02", "AC12.03"]
+    },
+    {
+      "name": "Installation d’un poste pour le développement",
+      "technologies": "VMWare, Bash",
+      "type": "Configuration de machine virtuelle Linux",
+      "lien": "lien_vers_le_projet_3",
+      "competences": ["AC13.01", "AC13.02", "AC13.03"]
+    },
+    {
+      "name": "Création d’une base de données",
+      "technologies": "SQL, PowerAMC, Oracle SQL Developer",
+      "type": "Conception et réalisation de base de données SQL",
+      "lien": "lien_vers_le_projet_4",
+      "competences": ["AC14.01", "AC14.02", "AC14.03"]
+    },
+    {
+      "name": "Recueil de besoins",
+      "technologies": "HTML, CSS, VS Code, Git",
+      "type": "Réalisation d'un site web de vente de chaussures",
+      "lien": "lien_vers_le_projet_5",
+      "competences": ["AC15.01", "AC15.02", "AC15.03"]
+    },
+    {
+      "name": "Découverte de l’environnement économique et écologique",
+      "technologies": "Microsoft Word",
+      "type": "Réalisation d'un rapport sur l'écosystème d'une entreprise",
+      "lien": "lien_vers_le_projet_6",
+      "competences": ["AC16.01", "AC16.02", "AC16.03"]
+    },
+    {
+      "name": "Aide à la décision Santé",
+      "technologies": "Java, Java Swing, NetBeans, Git",
+      "type": "Réalisation d'une application d'aide à la décision pour hôpitaux",
+      "lien": "lien_vers_le_projet_7",
+      "competences": ["AC17.01", "AC17.02", "AC17.03"]
+    },
+    {
+      "name": "Module de gestion de stocks",
+      "technologies": "Drupal 10, PHP, JS",
+      "type": "Création d'un module de gestion de stocks d'ouvrages pour un service d'édition",
+      "lien": "lien_vers_le_projet_7",
+      "competences": [""]
+    }
+  ],
+  "perso": []
+}
