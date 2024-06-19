@@ -2,7 +2,6 @@ import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/NavBar/NavBar";
 import Accueil from "./components/Accueil/Accueil";
-import Footer from "./components/Footer/Footer";
 import CompetencesIUT from "./components/CompetencesIUT/CompetencesIUT";
 import "./App.css";
 
