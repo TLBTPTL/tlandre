@@ -2,7 +2,7 @@ import "./About.css";
 
 function About() {
   return (
-    <div id="about" className="about-container">
+    <div id="about" className="about-container section">
       <h1 className="about-title">A propos</h1>
       <p className="about-content">
         Je suis Titouan-Lysandre, on m'appelle plus souvent Titouan. Je suis

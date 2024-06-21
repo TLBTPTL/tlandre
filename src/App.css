@@ -1,27 +1,31 @@
-*body {
-    background: linear-gradient(to bottom, #5439ff, #f2f2f2);
+body {
+    background: linear-gradient(to bottom, #ffffff, #9d8eed);
 }
 
 /* Styles pour le mode sombre */
 .dark-mode {
     background-color: #1f1f1f;
     color: #ffffff;
-  }
-  
-  /* Styles spécifiques à la navbar en mode sombre */
-  .dark-mode .navbar {
+}
+
+/* Styles spécifiques à la navbar en mode sombre */
+.dark-mode .navbar {
     background-color: #333333;
-  }
-  
-  .dark-mode .navbar-brand {
+}
+
+.dark-mode .navbar-brand {
     color: #ffffff;
-  }
-  
-  .dark-mode .navbar-toggler-icon {
+}
+
+.dark-mode .navbar-toggler-icon {
     background-color: #ffffff;
-  }
-  
-  .dark-mode .nav-link {
+}
+
+.dark-mode .nav-link {
     color: #ffffff;
-  }
-  
+}
+
+/* Espacement supplémentaire entre les sections */
+.section {
+    margin-bottom: 70px;
+}

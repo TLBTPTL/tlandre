@@ -8,7 +8,7 @@ interface ProjectData {
   technologies: string;
   type: string;
   lien: string;
-  competences: string[]; // Ajout de la propriété competences
+  competences: string[];
 }
 
 interface ProjectsData {
@@ -44,11 +44,11 @@ function ProjectList() {
   const persoPaginationVisible = perso.length > 3;
 
   return (
-    <>
+    <div className="section">
       <h1>Mes Projets</h1>
-      <div className="row" id="projects">
-        <div className="col-md-6">
-          <h3>Projets IUT et Professionels</h3>
+      <div className="row project-list-container" id="projects">
+        <div className="col-md-6 project-list-column">
+          <h3 className="project-list-title">Projets IUT et Professionels</h3>
           <div className="project-list-card-column">
             {equipeLimited.map((project: ProjectData, index: number) => (
               <div className="mb-3" key={index}>
@@ -112,8 +112,8 @@ function ProjectList() {
             )}
           </div>
         </div>
-        <div className="col-md-6">
-          <h3>Projets Personnels</h3>
+        <div className="col-md-6 project-list-column">
+          <h3 className="project-list-title">Projets Personnels</h3>
           <div className="project-list-card-column">
             {persoLimited.map((project: ProjectData, index: number) => (
               <div className="mb-3" key={index}>
@@ -122,7 +122,7 @@ function ProjectList() {
                   technologies={project.technologies}
                   type={project.type}
                   lien={project.lien}
-                  competences={project.competences} // Passer les compétences
+                  competences={project.competences}
                 />
               </div>
             ))}
@@ -176,7 +176,7 @@ function ProjectList() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

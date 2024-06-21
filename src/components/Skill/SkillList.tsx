@@ -33,7 +33,7 @@ function SkillList() {
   };
 
   return (
-    <>
+    <div className="section">
       <h1>Mes Compétences</h1>
       <ul className="nav nav-tabs justify-content-center">
         {categories.map((category) => (
@@ -55,7 +55,7 @@ function SkillList() {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
